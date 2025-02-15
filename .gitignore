@@ -1,0 +1,16 @@
+.DS_Store          # macOS Finder metadata
+notes.*            # Any file starting with 'notes.'
+*.pyc              # Compiled Python files
+.bundle            # Bundler directory
+.byebug_history    # Byebug history file
+.env               # Environment variables file
+.git/              # Git repository directory
+/bower_components/ # Bower dependencies
+/log               # Log files directory
+/node_modules/     # Node.js dependencies
+/tmp               # Temporary files directory
+db/*.sqlite3       # SQLite database files
+log/*.log          # Log files
+rerun.txt          # Rerun file for testing
+tmp/**/*           # All files in tmp directory
+/tags              # Tags file
