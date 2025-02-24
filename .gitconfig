@@ -4,8 +4,8 @@
   default = current
 [user]
   name = Cory Kelley
-  email = coryk0789@gmail.com
+  email = john.cory.kelley@gmail.com
 [color]
   ui = auto
 [core]
-  excludesfile = ~/.gitignore
+  excludesfile = ~/.gitignore_global
