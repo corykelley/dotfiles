@@ -1,0 +1,11 @@
+[init]
+  defaultBranch = main
+[push]
+  default = current
+[user]
+  name = Cory Kelley
+  email = john.cory.kelley@gmail.com
+[color]
+  ui = auto
+[core]
+  excludesfile = ~/.gitignore
