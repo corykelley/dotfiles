@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "create-t3-app": "^7.38.1",
+    "create-vite": "^6.2.0"
+  }
+}
