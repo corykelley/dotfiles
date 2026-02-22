@@ -1,0 +1,10 @@
+theme = Adventure
+font-family = CaskaydiaCove Nerd Font Mono
+font-size = 18
+macos-icon = holographic
+window-inherit-working-directory = true
+
+window-width = 100
+window-height = 35
+window-padding-x = 5
+window-padding-y = 5
