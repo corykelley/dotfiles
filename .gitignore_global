@@ -1,5 +1,5 @@
 .DS_Store
-notes.*
+notes*.*
 .env
 /log
 /node_modules/
