@@ -41,7 +41,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -103,13 +103,23 @@ source $ZSH/oh-my-zsh.sh
 alias zshconfig="nano ~/.zshrc"
 alias -1="ls -1 -a"
 
+alias gap="git add -p"
+
+alias editzsh="cursor ~/.zshrc"
+
 alias brewup="brew update && brew outdated && brew upgrade&& brew cleanup"
 alias brewupcask="brew update && brew upgrade --cask && brew cleanup"
 alias brewupall="brewup && brewupcask"
 
+# NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Starship
-eval "$(starship init zsh)"
+eval "$(rbenv init - zsh)" # rbenv
+eval "$(starship init zsh)" # starship
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
