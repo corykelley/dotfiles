@@ -76,6 +76,17 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Disable zsh autocorrect (e.g. "correct 'next' to '.next' [nyae]?")
+unsetopt correct
+unsetopt correct_all
+
+# Clear screen but keep contents in scrollback (Ghostty / iTerm2-style)
+# Uses CSI 22 J so you can still scroll up after clear or Ctrl+L
+clear_screen_save_scrollback() { printf '\e[H\e[22J'; zle redisplay }
+zle -N clear_screen_save_scrollback
+bindkey '^L' clear_screen_save_scrollback
+alias clear='printf "\e[H\e[22J"'
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
